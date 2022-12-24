@@ -7,6 +7,7 @@
 
 body,
 html {
+  width: 100vw;
   height: 100%;
 }
 
@@ -14,49 +15,113 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  opacity: 0.8;
+  opacity: 0.7;
   text-align: center;
   background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .photo1 {
-  background-image: url(./img/foto1.jpg);
+  background-image: url(./img/bg.jpg);
   min-height: 100%;
 }
 
 .photo2 {
-  background-image: url(./img/foto2.jpg);
-  min-height: 400px;
+  background-image: url(./img/bg2.jpg);
+  min-height: 80%;
 }
 .photo3 {
-  background-image: url(./img/foto3.jpg);
-  min-height: 400px;
+  background-image: url(./img/bg3.jpg);
+  min-height: 80%;
 }
 .photo4 {
-  background-image: url(./img/foto4.jpg);
-  min-height: 400px;
+  background-image: url(./img/bg4.jpg);
+  min-height: 80%;
 }
 .photo5 {
-  background-image: url(./img/foto2.jpg);
+  background-image: url(./img/bg.jpg);
   min-height: 100%;
 }
 
-section {
-  padding: 25px;
-  background-color: #444;
-}
-
-.photo2 .text h1 {
-  color: red;
-}
-
 .text {
-  /* position: relative; */
-  margin: auto 0;
+  background-color: rgb(61, 61, 61);
+  text-align: center;
+  padding: 2rem;
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  outline: 5px solid purple;
+  outline-offset: 1rem;
+  text-transform: uppercase;
+  max-width: 50%;
 }
 
-.text .pho1 {
-  display: inline-block;
-  margin: auto 0;
-  color: red;
+.way-text {
+  padding: 1rem;
+  background-color: rgb(36, 36, 36);
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  outline: 5px solid purple;
+  outline-offset: 0.4rem;
+  text-transform: capitalize;
+}
+
+.team-text {
+  padding: 1rem;
+  background-color: rgb(36, 36, 36);
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  outline: 5px solid purple;
+  outline-offset: 0.25rem;
+  text-transform: capitalize;
+}
+
+.section {
+  text-align: center;
+  padding: 50px 80px;
+}
+
+.section-dark {
+  background-color: #282e34;
+  color: white;
+}
+
+.section-dark h2,
+p {
+  color: white;
+  font-family: "Lato", sans-serif;
+}
+
+.section-light {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.section-light p,
+h2 {
+  color: rgb(53, 52, 52);
+  /* font-weight: 700; */
+  font-family: "Lato", sans-serif;
+}
+
+.section h2 {
+  padding-bottom: 15px;
+}
+
+@media (max-width: 568px) {
+  .photo1,
+  .photo2,
+  .photo3,
+  .photo4,
+  .photo5 {
+    background-attachment: scroll;
+  }
+}
+
+.img-text img {
+  width: 250px;
+}
+.text .img-text {
+  background-color: red;
 }
