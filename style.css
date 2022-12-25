@@ -51,7 +51,7 @@ html {
   padding: 2rem;
   border-top-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
-  outline: 5px solid purple;
+  outline: 5px inset purple;
   outline-offset: 1rem;
   text-transform: uppercase;
   max-width: 50%;
